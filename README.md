@@ -20,3 +20,45 @@ SolidWorks Assembly → URDF conversion pipeline for ROS-based robotics.
 | **V12** | Mesh integration | Added the four STL meshes to the URDF and validated the resulting structure | We discovered mesh placement/orientation was the next major issue |
 | **V13A** | Mesh-frame diagnostic | Analyzed STL geometry: dimensions, centroid, PCA, triangle/vertex counts and CAD transforms | PCA cannot reliably tell us the original SolidWorks part frame |
 | **V14 — Planned** | Feature/reference frame solver | Determine STL ↔ CAD frame using meaningful engineering geometry/features rather than assuming STL orientation | First feature-matching experiment still needs to be developed |
+
+## SolidWorks Extraction Macro
+
+The SolidWorks macro `extractor01.swp` is responsible for extracting
+assembly information from SolidWorks.
+
+The macro extracts the CAD information required by the Python analysis
+pipeline, including:
+
+- Assembly information
+- Component names
+- Component paths
+- Fixed/suppressed state
+- Component transforms
+- Assembly origins
+- Local component axes
+- SolidWorks mates
+- Mate types
+- Mate entities
+- Concentric geometry
+- Coincident geometry
+
+The extracted information is stored as structured JSON and is then
+processed by the Python analyzer.
+
+### Pipeline
+
+SolidWorks Assembly
+        ↓
+extractor01.swp
+        ↓
+CAD JSON
+        ↓
+Python Analyzer
+        ↓
+Kinematic Model
+        ↓
+URDF
+        ↓
+STL Mesh Integration
+        ↓
+RViz / ROS
