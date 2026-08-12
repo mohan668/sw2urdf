@@ -1,0 +1,260 @@
+{
+  "format": "sw2urdf_kinematic_model",
+  "version": "3.0",
+  "source_assembly": {
+    "name": "Robot_Assembly(API)",
+    "path": "C:\\Users\\HomePC\\Desktop\\sw2urdfv01\\Robot_Assembly(API).SLDASM"
+  },
+  "root_components": [
+    "01.Base-1"
+  ],
+  "components": [
+    {
+      "name": "0.First_Mount-1",
+      "path": "C:\\Users\\HomePC\\Desktop\\BlackPepper\\Robot\\0.First_Mount.SLDPRT",
+      "fixed": false,
+      "assembly_origin": [
+        -2.7671325952e-17,
+        0.025,
+        3.99771716181e-17
+      ],
+      "local_axes_in_assembly": {
+        "x": [
+          0.999288738788429,
+          8.96256805406e-17,
+          0.0377096344536993
+        ],
+        "y": [
+          -8.64148535447e-17,
+          1,
+          -8.67759811711e-17
+        ],
+        "z": [
+          -0.0377096344536993,
+          8.3455588243e-17,
+          0.999288738788429
+        ]
+      }
+    },
+    {
+      "name": "Cap_End_Effector_Joint-5",
+      "path": "C:\\Users\\HomePC\\Desktop\\BlackPepper\\Robot\\end_effector\\Cap_End_Effector_Joint.SLDPRT",
+      "fixed": false,
+      "assembly_origin": [
+        0.20825177316351,
+        0.125,
+        -0.00785868782015106
+      ],
+      "local_axes_in_assembly": {
+        "x": [
+          0.00868736756902612,
+          -0.999288738788429,
+          -0.0366953154415154
+        ],
+        "y": [
+          -0.973101860389806,
+          1.3782378016636e-15,
+          -0.230375279285558
+        ],
+        "z": [
+          0.230211422285298,
+          0.0377096344537001,
+          -0.972409730781603
+        ]
+      }
+    },
+    {
+      "name": "01.Base-1",
+      "path": "C:\\Users\\HomePC\\Desktop\\BlackPepper\\Robot\\01.Base.SLDPRT",
+      "fixed": true,
+      "assembly_origin": [
+        0,
+        0,
+        0
+      ],
+      "local_axes_in_assembly": {
+        "x": [
+          1,
+          0,
+          0
+        ],
+        "y": [
+          0,
+          1,
+          0
+        ],
+        "z": [
+          0,
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "name": "05.UR_5_02_Nema17_Joint-1",
+      "path": "C:\\Users\\HomePC\\Desktop\\BlackPepper\\Robot\\05.UR_5_02_Nema17_Joint.SLDPRT",
+      "fixed": false,
+      "assembly_origin": [
+        0.090935275229747,
+        0.125,
+        -0.0034315767352866
+      ],
+      "local_axes_in_assembly": {
+        "x": [
+          0.0366953154415141,
+          0.999288738788429,
+          -0.00868736756902735
+        ],
+        "y": [
+          0.230375279285564,
+          -1.059543058895e-16,
+          0.973101860389805
+        ],
+        "z": [
+          0.972409730781601,
+          -0.0377096344536991,
+          -0.230211422285303
+        ]
+      }
+    }
+  ],
+  "connections": [
+    {
+      "parent_candidate": "0.First_Mount-1",
+      "child_candidate": "01.Base-1",
+      "mates": [
+        {
+          "name": "Concentric01",
+          "type": "MateConcentric"
+        },
+        {
+          "name": "Coincident1",
+          "type": "MateCoincident"
+        }
+      ],
+      "classification": {
+        "type": "fixed_root",
+        "confidence": "HIGH",
+        "reason": "One component is fixed in the SolidWorks assembly."
+      },
+      "concentric_geometry": [
+        {
+          "mate": "Concentric01",
+          "component_a": "01.Base-1",
+          "component_b": "0.First_Mount-1",
+          "point_a": [
+            0,
+            0.025,
+            0
+          ],
+          "point_b": [
+            -2.7671325952e-17,
+            0.025,
+            3.99771716181e-17
+          ],
+          "axis_a": [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          "axis_b": [
+            8.96256805406e-17,
+            1.0,
+            8.3455588243e-17
+          ],
+          "point_distance": 4.861971339410434e-17,
+          "axis_dot": -1.0,
+          "axis": [
+            0.0,
+            -1.0,
+            0.0
+          ]
+        }
+      ],
+      "joint_origin_cad": [
+        0,
+        0.025,
+        0
+      ]
+    },
+    {
+      "parent_candidate": "0.First_Mount-1",
+      "child_candidate": "05.UR_5_02_Nema17_Joint-1",
+      "mates": [
+        {
+          "name": "Concentric02",
+          "type": "MateConcentric"
+        },
+        {
+          "name": "Coincident2",
+          "type": "MateCoincident"
+        }
+      ],
+      "classification": {
+        "type": "revolute_candidate",
+        "confidence": "MEDIUM",
+        "reason": "Concentric + Coincident found without a Lock mate."
+      },
+      "concentric_geometry": [
+        {
+          "mate": "Concentric02",
+          "component_a": "0.First_Mount-1",
+          "component_b": "05.UR_5_02_Nema17_Joint-1",
+          "point_a": [
+            0.090935275229747,
+            0.125,
+            -0.00343157673528658
+          ],
+          "point_b": [
+            0.090935275229747,
+            0.125,
+            -0.0034315767352866
+          ],
+          "axis_a": [
+            0.9992887387884286,
+            -8.641485354469996e-17,
+            -0.037709634453699285
+          ],
+          "axis_b": [
+            0.9992887387884286,
+            -1.0595430588949995e-16,
+            -0.03770963445369919
+          ],
+          "point_distance": 1.9949319973733282e-17,
+          "axis_dot": 1.0,
+          "axis": [
+            0.9992887387884286,
+            -8.641485354469996e-17,
+            -0.037709634453699285
+          ]
+        }
+      ],
+      "joint_origin_cad": [
+        0.090935275229747,
+        0.125,
+        -0.00343157673528658
+      ]
+    },
+    {
+      "parent_candidate": "05.UR_5_02_Nema17_Joint-1",
+      "child_candidate": "Cap_End_Effector_Joint-5",
+      "mates": [
+        {
+          "name": "Coincident3",
+          "type": "MateCoincident"
+        },
+        {
+          "name": "Lock1",
+          "type": "MateLock"
+        }
+      ],
+      "classification": {
+        "type": "fixed",
+        "confidence": "HIGH",
+        "reason": "SolidWorks Lock mate explicitly removes relative motion."
+      },
+      "concentric_geometry": [],
+      "joint_origin_cad": null
+    }
+  ]
+}

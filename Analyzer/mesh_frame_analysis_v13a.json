@@ -1,0 +1,424 @@
+{
+  "format": "sw2urdf_mesh_frame_analysis",
+  "version": "13A.0",
+  "stage": "diagnostic_only",
+  "coordinate_system": {
+    "note": "No mesh coordinate transformation has been applied.",
+    "cad_units": "SolidWorks API values are expected to be meters.",
+    "stl_units": "STL is unitless."
+  },
+  "meshes": [
+    {
+      "component": "01.Base-1",
+      "mesh": "01.Base.STL",
+      "path": "C:\\Users\\HomePC\\Desktop\\sw2urdfv01\\meshes\\01.Base.STL",
+      "status": "ANALYZED",
+      "stl": {
+        "type": "binary",
+        "triangle_count": 9052,
+        "vertex_count": 27156
+      },
+      "geometry": {
+        "bounding_box": {
+          "min": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "max": [
+            200.0,
+            75.0,
+            150.0
+          ],
+          "dimensions": [
+            200.0,
+            75.0,
+            150.0
+          ],
+          "center": [
+            100.0,
+            37.5,
+            75.0
+          ]
+        },
+        "centroid": [
+          100.02208991551332,
+          54.65796457971384,
+          75.00512550998408
+        ],
+        "pca": {
+          "x": [
+            -0.9999963048121875,
+            0.0026029837323335372,
+            -0.00078411584610676
+          ],
+          "y": [
+            -0.0009193929238334105,
+            -0.05238239613793947,
+            0.9986266766372205
+          ],
+          "z": [
+            0.0025583351270921885,
+            0.9986237074346559,
+            0.05238459573997201
+          ],
+          "eigenvalues": [
+            1172.6563616094336,
+            842.273713015882,
+            707.8250398859383
+          ]
+        },
+        "unit_analysis": {
+          "largest_dimension_raw": 200.0,
+          "heuristic": "possibly_millimeters",
+          "warning": "Heuristic only. STL has no inherent unit."
+        }
+      },
+      "cad_component": {
+        "component_name": "01.Base-1",
+        "path": "C:\\Users\\HomePC\\Desktop\\BlackPepper\\Robot\\01.Base.SLDPRT",
+        "fixed": true,
+        "suppressed": false,
+        "assembly_translation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "assembly_rotation": [
+          [
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      "frame_status": {
+        "stl_frame_known": false,
+        "cad_frame_known": true,
+        "exact_mesh_to_cad_transform": false,
+        "note": "V13A is diagnostic only. PCA directions describe geometry, not the actual SolidWorks part coordinate frame."
+      }
+    },
+    {
+      "component": "0.First_Mount-1",
+      "mesh": "0.First_Mount.STL",
+      "path": "C:\\Users\\HomePC\\Desktop\\sw2urdfv01\\meshes\\0.First_Mount.STL",
+      "status": "ANALYZED",
+      "stl": {
+        "type": "binary",
+        "triangle_count": 9882,
+        "vertex_count": 29646
+      },
+      "geometry": {
+        "bounding_box": {
+          "min": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "max": [
+            140.4499969482422,
+            170.37998962402344,
+            98.9000015258789
+          ],
+          "dimensions": [
+            140.4499969482422,
+            170.37998962402344,
+            98.9000015258789
+          ],
+          "center": [
+            70.2249984741211,
+            85.18999481201172,
+            49.45000076293945
+          ]
+        },
+        "centroid": [
+          87.04115121070089,
+          71.34436823020039,
+          49.540754377829884
+        ],
+        "pca": {
+          "x": [
+            -0.6554390004639505,
+            0.7552468231880414,
+            -0.0013974030160198074
+          ],
+          "y": [
+            0.7552461253779693,
+            0.6554403990900461,
+            0.0010832092345195534
+          ],
+          "z": [
+            -0.001734004723728499,
+            0.0003454056354736307,
+            0.999998436960061
+          ],
+          "eigenvalues": [
+            2480.1379627653932,
+            1349.8491784868272,
+            436.0909258426495
+          ]
+        },
+        "unit_analysis": {
+          "largest_dimension_raw": 170.37998962402344,
+          "heuristic": "possibly_millimeters",
+          "warning": "Heuristic only. STL has no inherent unit."
+        }
+      },
+      "cad_component": {
+        "component_name": "0.First_Mount-1",
+        "path": "C:\\Users\\HomePC\\Desktop\\BlackPepper\\Robot\\0.First_Mount.SLDPRT",
+        "fixed": false,
+        "suppressed": false,
+        "assembly_translation": [
+          -2.7671325952e-17,
+          0.025,
+          3.99771716181e-17
+        ],
+        "assembly_rotation": [
+          [
+            0.999288738788429,
+            -8.64148535447e-17,
+            -0.0377096344536993
+          ],
+          [
+            8.96256805406e-17,
+            1.0,
+            8.3455588243e-17
+          ],
+          [
+            0.0377096344536993,
+            -8.67759811711e-17,
+            0.999288738788429
+          ]
+        ]
+      },
+      "frame_status": {
+        "stl_frame_known": false,
+        "cad_frame_known": true,
+        "exact_mesh_to_cad_transform": false,
+        "note": "V13A is diagnostic only. PCA directions describe geometry, not the actual SolidWorks part coordinate frame."
+      }
+    },
+    {
+      "component": "05.UR_5_02_Nema17_Joint-1",
+      "mesh": "05.UR_5_02_Nema17_Joint.STL",
+      "path": "C:\\Users\\HomePC\\Desktop\\sw2urdfv01\\meshes\\05.UR_5_02_Nema17_Joint.STL",
+      "status": "ANALYZED",
+      "stl": {
+        "type": "binary",
+        "triangle_count": 31062,
+        "vertex_count": 93186
+      },
+      "geometry": {
+        "bounding_box": {
+          "min": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "max": [
+            103.0999984741211,
+            107.4000015258789,
+            76.20000457763672
+          ],
+          "dimensions": [
+            103.0999984741211,
+            107.4000015258789,
+            76.20000457763672
+          ],
+          "center": [
+            51.54999923706055,
+            53.70000076293945,
+            38.10000228881836
+          ]
+        },
+        "centroid": [
+          70.49466175342238,
+          47.6147455741855,
+          38.05164636531496
+        ],
+        "pca": {
+          "x": [
+            0.7683662562574458,
+            0.6399809403429169,
+            -0.006139400843151954
+          ],
+          "y": [
+            0.003855056201773294,
+            0.004964498570873529,
+            0.9999802459526993
+          ],
+          "z": [
+            -0.6399987771758617,
+            0.7683747456493711,
+            -0.0013473906880118677
+          ],
+          "eigenvalues": [
+            1032.0684701102125,
+            850.2657478327244,
+            545.3129104220911
+          ]
+        },
+        "unit_analysis": {
+          "largest_dimension_raw": 107.4000015258789,
+          "heuristic": "possibly_millimeters",
+          "warning": "Heuristic only. STL has no inherent unit."
+        }
+      },
+      "cad_component": {
+        "component_name": "05.UR_5_02_Nema17_Joint-1",
+        "path": "C:\\Users\\HomePC\\Desktop\\BlackPepper\\Robot\\05.UR_5_02_Nema17_Joint.SLDPRT",
+        "fixed": false,
+        "suppressed": false,
+        "assembly_translation": [
+          0.090935275229747,
+          0.125,
+          -0.0034315767352866
+        ],
+        "assembly_rotation": [
+          [
+            0.0366953154415141,
+            0.230375279285564,
+            0.972409730781601
+          ],
+          [
+            0.999288738788429,
+            -1.059543058895e-16,
+            -0.0377096344536991
+          ],
+          [
+            -0.00868736756902735,
+            0.973101860389805,
+            -0.230211422285303
+          ]
+        ]
+      },
+      "frame_status": {
+        "stl_frame_known": false,
+        "cad_frame_known": true,
+        "exact_mesh_to_cad_transform": false,
+        "note": "V13A is diagnostic only. PCA directions describe geometry, not the actual SolidWorks part coordinate frame."
+      }
+    },
+    {
+      "component": "Cap_End_Effector_Joint-5",
+      "mesh": "Cap_End_Effector_Joint.STL",
+      "path": "C:\\Users\\HomePC\\Desktop\\sw2urdfv01\\meshes\\Cap_End_Effector_Joint.STL",
+      "status": "ANALYZED",
+      "stl": {
+        "type": "binary",
+        "triangle_count": 8498,
+        "vertex_count": 25494
+      },
+      "geometry": {
+        "bounding_box": {
+          "min": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "max": [
+            76.20000457763672,
+            30.0,
+            76.20000457763672
+          ],
+          "dimensions": [
+            76.20000457763672,
+            30.0,
+            76.20000457763672
+          ],
+          "center": [
+            38.10000228881836,
+            15.0,
+            38.10000228881836
+          ]
+        },
+        "centroid": [
+          38.1042069704582,
+          8.020926919047788,
+          41.75434514215724
+        ],
+        "pca": {
+          "x": [
+            -0.9999992596137913,
+            5.9036249654754066e-05,
+            0.0012154367900045835
+          ],
+          "y": [
+            -0.001215891498259522,
+            -0.08851713526260085,
+            -0.9960739121032971
+          ],
+          "z": [
+            -4.8782514594459304e-05,
+            0.9960746524631694,
+            -0.08851714150740872
+          ],
+          "eigenvalues": [
+            557.3287513446422,
+            510.4586977408299,
+            54.36482611845979
+          ]
+        },
+        "unit_analysis": {
+          "largest_dimension_raw": 76.20000457763672,
+          "heuristic": "possibly_millimeters",
+          "warning": "Heuristic only. STL has no inherent unit."
+        }
+      },
+      "cad_component": {
+        "component_name": "Cap_End_Effector_Joint-5",
+        "path": "C:\\Users\\HomePC\\Desktop\\BlackPepper\\Robot\\end_effector\\Cap_End_Effector_Joint.SLDPRT",
+        "fixed": false,
+        "suppressed": false,
+        "assembly_translation": [
+          0.20825177316351,
+          0.125,
+          -0.00785868782015106
+        ],
+        "assembly_rotation": [
+          [
+            0.00868736756902612,
+            -0.973101860389806,
+            0.230211422285298
+          ],
+          [
+            -0.999288738788429,
+            1.3782378016636e-15,
+            0.0377096344537001
+          ],
+          [
+            -0.0366953154415154,
+            -0.230375279285558,
+            -0.972409730781603
+          ]
+        ]
+      },
+      "frame_status": {
+        "stl_frame_known": false,
+        "cad_frame_known": true,
+        "exact_mesh_to_cad_transform": false,
+        "note": "V13A is diagnostic only. PCA directions describe geometry, not the actual SolidWorks part coordinate frame."
+      }
+    }
+  ],
+  "analysis_notes": [
+    "Bounding boxes are measured directly from STL vertices.",
+    "Centroids are geometric vertex averages and are not mass centroids.",
+    "PCA directions are geometry-derived and must not be treated as SolidWorks part axes.",
+    "No mesh rotation or translation has been applied.",
+    "No URDF file has been modified.",
+    "Exact STL-to-part-frame correspondence requires SolidWorks part coordinate-system information or an equivalent exported frame."
+  ]
+}

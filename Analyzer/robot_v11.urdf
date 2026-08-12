@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='utf-8'?>
+<robot name="black_pepper_robot">
+  <link name="01.Base-1" />
+  <link name="0.First_Mount-1" />
+  <link name="05.UR_5_02_Nema17_Joint-1" />
+  <link name="Cap_End_Effector_Joint-5" />
+  <joint name="joint_1" type="revolute">
+    <parent link="01.Base-1" />
+    <child link="0.First_Mount-1" />
+    <origin xyz="0 -0.025 0" rpy="0 0 0" />
+    <axis xyz="0 1 0" />
+    <limit lower="-3.14159265359" upper="3.14159265359" effort="1" velocity="1" />
+  </joint>
+  <joint name="joint_2" type="revolute">
+    <parent link="0.First_Mount-1" />
+    <child link="05.UR_5_02_Nema17_Joint-1" />
+    <origin xyz="0.0909352752297 -0.1 0.00343157673526" rpy="0 0 0" />
+    <axis xyz="0.999288738788 0 0.0377096344534" />
+    <limit lower="-3.14159265359" upper="3.14159265359" effort="1" velocity="1" />
+  </joint>
+  <joint name="joint_3" type="fixed">
+    <parent link="05.UR_5_02_Nema17_Joint-1" />
+    <child link="Cap_End_Effector_Joint-5" />
+    <origin xyz="0 -0.0227187909435 -0.115180799346" rpy="-1.10742793667 -0.0546053069933 -3.10782899881" />
+  </joint>
+</robot>

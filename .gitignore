@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Generated URDF / JSON outputs
+black_pepper_robot_v*.urdf
+kinematic_model_v*.json
+robot_cad_data_v*.json
+
+# SolidWorks temporary/backup files
+~$*
+*.bak
+*.tmp
+
+# VS Code
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
